@@ -4,7 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akshay Photography</title>
-<style>.service-box {
+<style>.glow-title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFD700;
+    animation: goldGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes goldGlow {
+    from {
+        text-shadow:
+            0 0 10px #FFD700,
+            0 0 20px #FFD700;
+    }
+
+    to {
+        text-shadow:
+            0 0 20px #FFD700,
+            0 0 40px #FFD700,
+            0 0 60px #FFD700;
+    }
+}.service-box {
     background: rgba(255,255,255,0.9);
     color: black !important;
     padding: 20px;
@@ -60,7 +81,7 @@ footer{background:#111;color:#fff;text-align:center;padding:20px}
 
 <section class="hero">
 <div class="hero-content">
-<h1>Akshay Photography</h1>
+<h1 class="glow-title">Akshay Photography</h1>
 <p>15+ Years of Professional Photography Experience</p>
 <a href="#contact" class="btn">Book Now</a>
 </div>
