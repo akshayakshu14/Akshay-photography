@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<head><link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akshay Photography</title>
@@ -62,13 +62,32 @@
     opacity:.3;
 }
 
-.loader-logo{
+.signature-logo{
+    font-family:'Allura', cursive;
+    font-size:90px;
     color:white;
+    font-weight:normal;
+    text-align:center;
     margin-top:30px;
-    font-size:42px;
-    letter-spacing:3px;
+
+    opacity:0;
+    transform:translateY(20px);
+
+    animation:signatureReveal 2s ease forwards;
+    animation-delay:2s;
 }
 
+@keyframes signatureReveal{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
 @keyframes spinLens{
     0%{
         transform:scale(0) rotate(0deg);
@@ -153,7 +172,7 @@ footer{background:#111;color:#fff;text-align:center;padding:20px}
 
 <section class="hero">
 <div class="hero-content">
-<h1 class="loader-logo">Akshay Photography</h1>
+<h1 class="signature-logo">Akshay Photography</h1>
 <p>PHOTOGRAPHY</p>
 <a href="#contact" class="btn">Book Now</a>
 </div>
