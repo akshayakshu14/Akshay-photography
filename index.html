@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akshay Photography</title>
-<style>.glow-title{
-    color:#FFD700 !important;
-    font-size:60px;
-    font-weight:bold;
-    text-align:center;
-    animation:glow 1.5s ease-in-out infinite alternate !important;
+<style>.signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    margin: 20px auto 0;
+    animation: handwriting 4s steps(40, end) forwards;
 }
 
-@keyframes glow{
-    from{
-        text-shadow:
-        0 0 10px #FFD700,
-        0 0 20px #FFD700,
-        0 0 30px #FFD700;
-    }
+.photography {
+    text-align: center;
+    color: #d4af37;
+    font-size: 24px;
+    letter-spacing: 8px;
+    margin-top: -10px;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 4s;
+}
 
-    to{
-        text-shadow:
-        0 0 20px #FFD700,
-        0 0 40px #FFD700,
-        0 0 60px #FFD700,
-        0 0 80px #FFD700;
+@keyframes handwriting {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }.service-box {
     background: rgba(255,255,255,0.9);
@@ -83,8 +99,8 @@ footer{background:#111;color:#fff;text-align:center;padding:20px}
 
 <section class="hero">
 <div class="hero-content">
-<h1 class="glow-title">Akshay Photography</h1>
-<p>15+ Years of Professional Photography Experience</p>
+<h1 class="signature">Akshay</h1>
+<p>class="photography">PHOTOGRAPHY</p>
 <a href="#contact" class="btn">Book Now</a>
 </div>
 </section>
