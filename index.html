@@ -4,7 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akshay Photography</title>
-<style>.portfolio{
+<style>.about{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.about img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.about-text{
+    flex:1;
+    min-width:300px;
+}.portfolio{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:20px;
@@ -210,17 +227,33 @@ footer{background:#111;color:#fff;text-align:center;padding:20px}
 </div>
 </section>
 
-<section id="contact">
-<h2 class="section-title">About Me</h2>
-<div class="about">
-<img src="akkuua.jpg" alt="Akshay"
-style="width:250px; height:250px; border-radius:50%; object-fit:cover;">
-<h3>Professional Photographer from Chikmagalur</h3>
-<p>Hello, I'm Akshay, a passionate photographer with over 15 years of experience capturing weddings, portraits, engagements and special events.</p>
-<br>
-<p>My mission is to transform emotions into timeless memories through creative storytelling and professional photography.</p>
-</div>
-</div>
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+
+        <img src="akkuua.jpg" alt="Akshay"
+        style="width:250px;height:250px;border-radius:50%;object-fit:cover;">
+
+        <div class="about-text">
+            <h3>Professional Photographer from Chikmagalur</h3>
+            <br>
+
+            <p>
+                Hello, I'm Akshay, a passionate photographer with over
+                15 years of experience capturing weddings, engagements,
+                portraits and special events.
+            </p>
+
+            <br>
+
+            <p>
+                My mission is to transform emotions into timeless memories
+                through creative storytelling and professional photography.
+            </p>
+        </div>
+
+    </div>
 </section>
 
 <section id="services">
