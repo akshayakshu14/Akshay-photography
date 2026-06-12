@@ -4,7 +4,39 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akshay Photography</title>
-<style>.hero-content h1{
+<style>.whatsapp-float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:25px;
+    right:25px;
+
+    background:#25D366;
+    color:white;
+
+    border-radius:50%;
+    text-align:center;
+    font-size:30px;
+    line-height:60px;
+
+    text-decoration:none;
+    box-shadow:0 4px 12px rgba(0,0,0,.3);
+
+    z-index:1000;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+}
+
+.social-btn{
+    display:inline-block;
+    padding:12px 24px;
+    background:#E1306C;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+}.hero-content h1{
     font-size:60px;
     font-weight:bold;
     margin-bottom:20px;
@@ -323,15 +355,25 @@ Every story is unique, and I am dedicated to capturing yours with authenticity, 
 </section>
 
 <section id="contact" class="contact">
-<h2 class="section-title">Contact</h2>
-<p>Akshay Photography</p>
-<p>📍 Chikmagalur, Karnataka</p>
-<p>📞 8951180155</p>
-<a href="https://instagram.com/akshay_fotography_"
-   target="_blank"
-   class="instagram-btn">
-   📷 Follow on Instagram
-</a>
+    <h2 class="section-title">Get In Touch</h2>
+
+    <p><strong>Akshay Photography</strong></p>
+    <p>📍 Chikmagalur, Karnataka</p>
+    <p>📞 <a href="tel:8951180155">8951180155</a></p>
+
+    <p>
+        📧 <a href="mailto:akshay.akshu14@gmail.com">
+            akshay.akshu14@gmail.com
+        </a>
+    </p>
+
+    <br>
+
+    <a href="https://instagram.com/akshay_fotography_"
+       target="_blank"
+       class="social-btn">
+       📷 Instagram
+    </a>
 </section>
 
 <footer>
@@ -346,5 +388,10 @@ window.onload = function() {
     }, 4000);
 };
 </script>
+    <a href="https://wa.me/918951180155"
+   class="whatsapp-float"
+   target="_blank">
+   💬
+</a>
 </body>
 </html>
