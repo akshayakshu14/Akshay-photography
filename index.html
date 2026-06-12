@@ -5,7 +5,87 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akshay Photography</title>
-<style>.whatsapp-float{
+<style>@media screen and (max-width: 768px) {
+
+    /* Header */
+    header{
+        flex-direction:column;
+        text-align:center;
+        padding:15px;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px;
+        font-size:14px;
+    }
+
+    /* Hero Section */
+    .hero{
+        height:auto;
+        padding:100px 20px;
+    }
+
+    .hero-content h1{
+        font-size:38px !important;
+        line-height:1.2;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    /* About Section */
+    .about{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about img{
+        width:220px;
+        height:220px;
+        margin-bottom:20px;
+    }
+
+    .about-text{
+        width:100%;
+    }
+
+    /* Services */
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    /* Portfolio */
+    .portfolio{
+        grid-template-columns:1fr;
+    }
+
+    .portfolio img{
+        width:100%;
+        height:auto;
+    }
+
+    /* Contact */
+    .contact{
+        text-align:center;
+        padding:40px 20px;
+    }
+
+    /* Section Titles */
+    .section-title{
+        font-size:32px;
+    }
+}.whatsapp-float{
     position:fixed;
     width:60px;
     height:60px;
@@ -39,9 +119,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     border-radius:25px;
 }.hero-content h1{
     font-size:60px;
-    font-weight:bold;
-    margin-bottom:20px;
     max-width:900px;
+    margin:auto;
 }
 
 .hero-content p{
