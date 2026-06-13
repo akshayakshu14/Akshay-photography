@@ -361,6 +361,13 @@ footer{background:#111;color:#fff;text-align:center;padding:20px}
 </header>
 
 <section class="hero">
+    <button onclick="document.getElementById('bgmusic').play()" class="btn">
+    🎵 Play Music
+</button>
+
+<audio id="bgmusic" loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+</audio>
     <div class="hero-content">
 
         <h1>Capturing Timeless Love Stories & Precious Family Moments</h1>
@@ -467,11 +474,24 @@ window.onload = function() {
         document.getElementById("website").style.display = "block";
     }, 4000);
 };
+        
 </script>
     <a href="https://wa.me/918951180155"
    class="whatsapp-float"
    target="_blank">
    <i class="fab fa-whatsapp"></i>
 </a>
+    <audio autoplay loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+</audio>
+    <audio id="bgmusic" loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener('click', function() {
+    document.getElementById('bgmusic').play();
+}, { once: true });
+</script>
 </body>
 </html>
