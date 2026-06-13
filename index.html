@@ -5,7 +5,81 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akshay Photography</title>
-<style>@media screen and (max-width: 768px) {
+<style>.footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.footer h3{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.footer-contact{
+    margin:20px 0;
+}
+
+.footer-contact p{
+    margin:8px 0;
+}
+
+.footer a{
+    color:#ff9800;
+    text-decoration:none;
+}
+
+.footer-social{
+    margin:20px 0;
+}
+
+.footer-social a{
+    display:inline-block;
+    margin:10px;
+    padding:10px 20px;
+    border-radius:25px;
+    background:#222;
+    transition:.3s;
+}
+
+.footer-social a:hover{
+    background:#ff9800;
+    color:white;
+}
+
+.copyright{
+    margin-top:15px;
+    font-size:14px;
+    color:#aaa;
+}.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:white;
+}
+
+@media screen and (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav{
+        display:none;
+        flex-direction:column;
+        text-align:center;
+        width:100%;
+    }
+
+    nav.show{
+        display:flex;
+    }
+
+    nav a{
+        padding:10px;
+    }
+}@media screen and (max-width: 768px) {
 
     /* Header */
     header{
@@ -351,12 +425,13 @@ footer{background:#111;color:#fff;text-align:center;padding:20px}
 <div id="website">
 </div>
 <header>
-<div class="logo">Akshay Photography</div>
-<nav>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#contact">Contact</a>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="mobileNav">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
 </nav>
 </header>
 
@@ -370,7 +445,7 @@ footer{background:#111;color:#fff;text-align:center;padding:20px}
 </audio>
     <div class="hero-content">
 
-        <h1>Capturing Timeless Love Stories & Precious Family Moments</h1>
+        <h1>Capturing Love, Laughter & Timeless Memories</h1>
 
         <p>
             Professional Wedding, Engagement, Portrait & Event Photography
@@ -463,8 +538,34 @@ Every story is unique, and I am dedicated to capturing yours with authenticity, 
     </a>
 </section>
 
-<footer>
-© 2026 Akshay Photography
+<footer class="footer">
+
+    <h3>Akshay Photography</h3>
+
+    <p>Capturing Timeless Love Stories & Precious Family Moments</p>
+
+    <div class="footer-contact">
+        <p>📍 Chikmagalur, Karnataka</p>
+        <p>📞 <a href="tel:8951180155">8951180155</a></p>
+        <p>📧 <a href="mailto:akshay.akshu14@gmail.com">akshay.akshu14@gmail.com</a></p>
+    </div>
+
+    <div class="footer-social">
+        <a href="https://instagram.com/akshay_fotography_" target="_blank">
+            📷 Instagram
+        </a>
+
+        <a href="https://wa.me/918951180155" target="_blank">
+            💬 WhatsApp
+        </a>
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Akshay Photography | All Rights Reserved
+    </p>
+
 </footer>
 </div>
     <script>
@@ -492,6 +593,11 @@ window.onload = function() {
 document.addEventListener('click', function() {
     document.getElementById('bgmusic').play();
 }, { once: true });
+</script>
+    <script>
+function toggleMenu() {
+    document.getElementById("mobileNav").classList.toggle("show");
+}
 </script>
 </body>
 </html>
